@@ -1,0 +1,182 @@
+[
+  {
+    "model": "landing.sitesetting",
+    "pk": 1,
+    "fields": {
+      "site_name": "ஊர் உழவன்",
+      "tagline": "மொத்த விற்பனை",
+      "phone": "+91 99940 21305",
+      "whatsapp_number": "919994021305",
+      "email": "orders@oorulavan.com",
+      "location": "மொத்த வியாபார வளாகம், தமிழ்நாடு - 641001",
+      "service_hours": "24/7 திருமண ஆர்டர் சேவை",
+      "hero_title": "“உங்கள் வணிகத்திற்குத் தேவையான புதிய காய்கறிகள் மற்றும் பழங்கள் — நம்பிக்கையுடன் நேரடியாக விநியோகம்.”",
+      "hero_description": "திருமண நிகழ்ச்சி, ஹோட்டல்கள், கேட்டரிங், காய்கறி மற்றும் பழக்கடைகளுக்கான தேவையான மொத்த காய்கறிகள், பழங்கள், அரிசி, மளிகைப் பொருட்கள் மற்றும் பிற அத்தியாவசியப் பொருட்கள் — அனைத்தும் நேரடியாக உங்கள் இடத்திற்கு."
+    }
+  },
+  {
+    "model": "landing.productcategory",
+    "pk": 1,
+    "fields": {
+      "title": "புதிய காய்கறிகள்",
+      "tag": "Fresh Vegetables",
+      "description": "தக்காளி, வெங்காயம், உருளைக்கிழங்கு, கேரட், பீன்ஸ், முட்டைக்கோஸ் உள்ளிட்ட அனைத்து பருவகால காய்கறிகள்.",
+      "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600",
+      "order": 1
+    }
+  },
+  {
+    "model": "landing.productcategory",
+    "pk": 2,
+    "fields": {
+      "title": "புதிய பழங்கள்",
+      "tag": "Fresh Fruits",
+      "description": "வாழைப்பழ தார்கள், ஆப்பிள், ஆரஞ்சு, எலுமிச்சை, மாதுளை, தர்பூசணி மற்றும் ஜூஸ் பழ வகைகள்.",
+      "image_url": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=600",
+      "order": 2
+    }
+  },
+  {
+    "model": "landing.productcategory",
+    "pk": 3,
+    "fields": {
+      "title": "அரிசி மற்றும் தானியங்கள்",
+      "tag": "Rice & Grains",
+      "description": "பொன்னி, இட்லி அரிசி, சீரக சம்பா, பாஸ்மதி, கம்பு, சோளம் மற்றும் உயர்தர தானிய வகைகள் 25/50kg மூட்டைகள்.",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600",
+      "order": 3
+    }
+  },
+  {
+    "model": "landing.productcategory",
+    "pk": 4,
+    "fields": {
+      "title": "மளிகைப் பொருட்கள் & பருப்பு வகைகள்",
+      "tag": "Grocery & Pulses",
+      "description": "துவரம் பருப்பு, உளுந்து, பாசிப்பருப்பு, கடலைப்பருப்பு, சர்க்கரை மற்றும் முழு மளிகை சரக்குகள்.",
+      "image_url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600",
+      "order": 4
+    }
+  },
+  {
+    "model": "landing.targetaudience",
+    "pk": 1,
+    "fields": {
+      "title": "ஹோட்டல்கள் (Hotels)",
+      "subtitle": "நட்சத்திர & தங்கும் விடுதிகள்",
+      "description": "உயர் தரம் பிரிக்கப்பட்ட காய்கறிகள், பிரீமியம் அரிசி, மளிகைப் பொருட்கள் தினசரி காலை விநியோகம்.",
+      "badge_left": "தொடர்ச்சியான தினசரி சப்ளை",
+      "badge_right": "B2B ரேட்ஸ்",
+      "icon_type": "hotel",
+      "order": 1
+    }
+  },
+  {
+    "model": "landing.targetaudience",
+    "pk": 2,
+    "fields": {
+      "title": "உணவகங்கள் (Restaurants)",
+      "subtitle": "மெஸ், தாபா & பாஸ்ட் புட்ஸ்",
+      "description": "அன்றாட சமையலுக்குத் தேவையான பெரிய வெங்காயம், நாட்டு தக்காளி, உருளை, மசாலா பொருட்கள் மற்றும் எண்ணெய் வகைகள்.",
+      "badge_left": "கிரேட்கள் மற்றும் மூட்டை விலை",
+      "badge_right": "குறைந்த சேதாரம்",
+      "icon_type": "food",
+      "order": 2
+    }
+  },
+  {
+    "model": "landing.targetaudience",
+    "pk": 3,
+    "fields": {
+      "title": "கேட்டரிங் சர்வீசஸ் (Catering Services)",
+      "subtitle": "நிகழ்வு சமையல் ஒப்பந்தக்காரர்கள்",
+      "description": "ஒரே பட்டியலில் அத்தனை பொருட்களையும் குறித்த நேரத்தில் சமையல் கூடம் உள்ள இடத்திற்கே கொண்டு சேர்த்தல்.",
+      "badge_left": "முழுமையான பட்டியல் பேக்கிங்",
+      "badge_right": "24/7 சேவை",
+      "icon_type": "catering",
+      "order": 3
+    }
+  },
+  {
+    "model": "landing.processstep",
+    "pk": 1,
+    "fields": {
+      "step_number": 1,
+      "title": "படி 1: பட்டியல் அனுப்பவும்",
+      "description": "உங்களுக்குத் தேவையான பொருட்கள் மற்றும் அவற்றின் அளவை அனுப்பவும்.",
+      "tag_badge": "Form / WhatsApp / Excel"
+    }
+  },
+  {
+    "model": "landing.processstep",
+    "pk": 2,
+    "fields": {
+      "step_number": 2,
+      "title": "படி 2: விலை & இருப்பு உறுதி",
+      "description": "பொருட்களின் இருப்பு மற்றும் மொத்த விலையை நாங்கள் உறுதி செய்வோம்.",
+      "tag_badge": "உடனடி Quoting & Stock Check"
+    }
+  },
+  {
+    "model": "landing.processstep",
+    "pk": 3,
+    "fields": {
+      "step_number": 3,
+      "title": "படி 3: ஆர்டர் கன்ஃபர்மேஷன்",
+      "description": "ஆர்டரை உறுதிசெய்யவும்.",
+      "tag_badge": "பொருட்கள் தரம் பிரிப்பு & பேக்கிங்"
+    }
+  },
+  {
+    "model": "landing.processstep",
+    "pk": 4,
+    "fields": {
+      "step_number": 4,
+      "title": "படி 4: நேரடி டெலிவரி",
+      "description": "உறுதிசெய்யப்பட்ட ஆர்டரை நேரடியாக உங்கள் இடத்திற்கு வழங்குவோம்.",
+      "tag_badge": "குறித்த நேரத்தில் உங்கள் இடத்தில்"
+    }
+  },
+  {
+    "model": "landing.keyproduct",
+    "pk": 1,
+    "fields": {
+      "name": "வாழைப்பழம்",
+      "category_tag": "பழங்கள்",
+      "description": "பூவன், செவ்வாழை, ரோபஸ்டா மொத்த தார்",
+      "image_url": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500",
+      "order": 1
+    }
+  },
+  {
+    "model": "landing.keyproduct",
+    "pk": 2,
+    "fields": {
+      "name": "தக்காளி",
+      "category_tag": "காய்கறிகள்",
+      "description": "நாட்டு தக்காளி & ஆப்பிள் தக்காளி கிரேட்கள்",
+      "image_url": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500",
+      "order": 2
+    }
+  },
+  {
+    "model": "landing.whychooseus",
+    "pk": 1,
+    "fields": {
+      "title": "ஒரே இடத்தில் அனைத்தும்",
+      "description": "காய்கறிகள், பழங்கள் மற்றும் முழுமையான மளிகைப் பொருட்கள் அனைத்தும் ஒரே சப்ளையரிடம்.",
+      "icon_type": "basket",
+      "order": 1
+    }
+  },
+  {
+    "model": "landing.whychooseus",
+    "pk": 2,
+    "fields": {
+      "title": "B2B மொத்த விலை",
+      "description": "வணிக வாடிக்கையாளர்களுக்கான அதிக சேமிப்பு தரும் நேரடி மார்க்கெட் மொத்த விற்பனை விலை.",
+      "icon_type": "discount",
+      "order": 2
+    }
+  }
+]
