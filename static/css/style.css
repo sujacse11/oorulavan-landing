@@ -39,7 +39,7 @@ img {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -68,54 +68,82 @@ img {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 20px;
+    padding: 12px 0;
+    width: 100%;
+    gap: 15px;
 }
 .brand-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-decoration: none;
     color: var(--primary);
+    flex-shrink: 0;
 }
 .logo-icon {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     background: var(--primary);
     color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 .logo-title {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1.2;
+    white-space: nowrap;
 }
 .logo-tagline {
     font-size: 11px;
     color: #6B7280;
     letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 .nav-links {
     display: flex;
-    gap: 22px;
+    gap: 20px;
+    align-items: center;
 }
 .nav-link {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13.5px;
     transition: color 0.2s;
+    white-space: nowrap;
+    position: relative;
+    padding: 6px 2px;
 }
 .nav-link:hover, .nav-link.active {
     color: var(--primary);
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: var(--accent-green);
+    border-radius: 2px;
+}
+.header-action {
+    flex-shrink: 0;
+}
+.header-action .btn {
+    padding: 9px 18px;
+    font-size: 13px;
+    white-space: nowrap;
 }
 
 /* BUTTONS */
@@ -130,13 +158,22 @@ img {
     cursor: pointer;
     border: none;
     transition: all 0.2s ease;
+    white-space: nowrap;
+    width: auto;
+    flex-shrink: 0;
 }
 .btn-primary {
     background: var(--primary);
     color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(11, 61, 44, 0.15);
 }
 .btn-primary:hover {
     background: var(--primary-light);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(11, 61, 44, 0.25);
+}
+.btn-primary:active {
+    transform: translateY(0);
 }
 .btn-outline {
     background: transparent;
@@ -199,29 +236,11 @@ img {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
-.floating-badge {
-    position: absolute;
-    bottom: -15px;
-    right: 20px;
-    background: #FFFFFF;
-    border-left: 5px solid var(--primary);
-    padding: 10px 18px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-.badge-title {
-    font-weight: 700;
-    color: var(--primary);
-}
-.badge-sub {
-    font-size: 11px;
-    color: #666;
-}
 
-/* FLOATING CONTACT BUTTONS */
+/* FLOATING QUICK CONTACT BUTTONS */
 .floating-contact {
     position: fixed;
-    right: 20px;
+    right: 25px;
     bottom: 25px;
     display: flex;
     flex-direction: column;
@@ -844,13 +863,39 @@ img {
     justify-content: space-between;
 }
 
-/* RESPONSIVENESS */
+/* ==========================================================================
+   RESPONSIVENESS (1200px, 992px, 600px)
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-link {
+        font-size: 12.5px;
+    }
+    .header-action .btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 992px) {
+    .nav-links, .topbar { 
+        display: none; 
+    }
     .hero-grid, .enquiry-box-grid { grid-template-columns: 1fr; }
     .grid-4, .grid-5 { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
+
 @media (max-width: 600px) {
-    .nav-links, .topbar { display: none; }
     .grid-4, .grid-3, .grid-5, .footer-grid, .form-grid-2, .enquiry-two-options { grid-template-columns: 1fr; }
+    .header-action .btn {
+        padding: 7px 12px;
+        font-size: 11.5px;
+    }
+    .brand-title {
+        font-size: 16px;
+    }
 }
