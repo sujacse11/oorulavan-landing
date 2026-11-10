@@ -32,25 +32,24 @@
     <!-- 2. MAIN NAVBAR -->
     <header class="header">
         <div class="container header-inner">
-            <a href="#" class="brand-logo">
+            <a href="#home" class="brand-logo">
                 <div class="logo-icon">🌾</div>
                 <div>
                     <h1 class="logo-title">{{ settings.site_name }}</h1>
                     <span class="logo-tagline">{{ settings.tagline }}</span>
                 </div>
             </a>
+            <!-- Exactly 6 links matching design Image 1 -->
             <nav class="nav-links">
                 <a href="#home" class="nav-link active">முகப்பு</a>
                 <a href="#categories" class="nav-link">பொருட்கள்</a>
-                <a href="#audience" class="nav-link">வாடிக்கையாளர்கள்</a>
                 <a href="#process" class="nav-link">செயல்முறை</a>
-                <a href="#products" class="nav-link">முக்கிய பொருட்கள்</a>
                 <a href="#enquiry-form" class="nav-link">மொத்த ஆர்டர்</a>
                 <a href="#why-us" class="nav-link">எங்களைப் பற்றி</a>
                 <a href="#footer" class="nav-link">தொடர்புக்கு</a>
             </nav>
             <div class="header-action">
-                <a href="#enquiry-form" class="btn btn-primary">தேவைப் பட்டியலை அனுப்புங்கள்</a>
+                <a href="#enquiry-form" class="btn btn-primary"> தேவைப் பட்டியலை அனுப்புங்கள்</a>
             </div>
         </div>
     </header>
@@ -77,14 +76,19 @@
             </div>
             <div class="hero-image-wrap">
                 <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&auto=format&fit=crop&q=80" alt="Fresh Produce Wholesale" class="hero-img">
-                <div class="floating-badge">
-                    <div class="badge-title">ஊர் உழவன்</div>
-                    <div class="badge-sub">நேரடி விநியோகம்</div>
-                </div>
             </div>
         </div>
     </section>
 
+    <!-- FLOATING CONTACT BUTTONS (Shown in Image 1) -->
+    <div class="floating-contact">
+        <a href="https://wa.me/{{ settings.whatsapp_number }}?text=வணக்கம், எனக்கு மொத்த காய்கறி/மளிகை விலை விவரங்கள் தேவை." target="_blank" class="float-btn float-wa" title="WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+        <a href="tel:{{ settings.phone }}" class="float-btn float-call" title="Call Us">📞</a>
+    </div>
 
     <!-- 4. PRODUCT CATEGORIES SECTION (7 CATEGORIES) -->
     <section id="categories" class="section">
@@ -127,7 +131,7 @@
                     </div>
                     <div class="category-body">
                         <h3 class="category-name">புதிய காய்கறிகள்</h3>
-                        <p class="category-desc">தக்காளி, வெங்காயம், உருளைக்கிழங்கு, கேரட், பீன்ஸ் உள்ளிட்ட அனைத்து காய்கறிகள்.</p>
+                        <p class="category-desc">தக்காளி, வெங்காயம், உருளைக்கிழங்கு, கேரட், பீன்ஸ், முட்டைக்கோஸ் உள்ளிட்ட அனைத்து பருவகால காய்கறிகள்.</p>
                         <a href="#" class="cat-link">மொத்த விலை கேட்க &rarr;</a>
                     </div>
                 </div>
@@ -138,7 +142,7 @@
                     </div>
                     <div class="category-body">
                         <h3 class="category-name">புதிய பழங்கள்</h3>
-                        <p class="category-desc">வாழைப்பழ தார்கள், ஆப்பிள், ஆரஞ்சு, எலுமிச்சை, மாதுளை, தர்பூசணி வகைகள்.</p>
+                        <p class="category-desc">வாழைப்பழ தார்கள், ஆப்பிள், ஆரஞ்சு, எலுமிச்சை, மாதுளை, தர்பூசணி மற்றும் ஜூஸ் பழ வகைகள்.</p>
                         <a href="#" class="cat-link">மொத்த விலை கேட்க &rarr;</a>
                     </div>
                 </div>
@@ -149,7 +153,7 @@
                     </div>
                     <div class="category-body">
                         <h3 class="category-name">அரிசி மற்றும் தானியங்கள்</h3>
-                        <p class="category-desc">பொன்னி, இட்லி அரிசி, சீரக சம்பா, பாஸ்மதி மொத்த மூட்டைகள்.</p>
+                        <p class="category-desc">பொன்னி, இட்லி அரிசி, சீரக சம்பா, பாஸ்மதி, கம்பு, சோளம் மற்றும் உயர்தர தானிய வகைகள் (25/50kg மூட்டைகள்).</p>
                         <a href="#" class="cat-link">மொத்த விலை கேட்க &rarr;</a>
                     </div>
                 </div>
@@ -159,16 +163,16 @@
                         <span class="cat-tag">Grocery & Pulses</span>
                     </div>
                     <div class="category-body">
-                        <h3 class="category-name">மளிகைப் பொருட்கள் & பருப்பு</h3>
-                        <p class="category-desc">துவரம் பருப்பு, உளுந்து, பாசிப்பருப்பு, கடலைப்பருப்பு, சர்க்கரை சரக்குகள்.</p>
+                        <h3 class="category-name">மளிகைப் பொருட்கள் & பருப்பு வகைகள்</h3>
+                        <p class="category-desc">துவரம் பருப்பு, உளுந்து, பாசிப்பருப்பு, கடலைப்பருப்பு, சர்க்கரை மற்றும் முழு மளிகை சரக்குகள்.</p>
                         <a href="#" class="cat-link">மொத்த விலை கேட்க &rarr;</a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <!-- Dynamic Indicator Dots -->
-            <div class="carousel-dots">
+            <!-- Dynamic Indicator Capsule Dots -->
+            <div class="carousel-dots" id="cat-dots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -177,7 +181,7 @@
         </div>
     </section>
 
-    <!-- 5. TARGET AUDIENCE (யாருக்கு விநியோகிக்கிறோம்?) -->
+    <!-- 5. TARGET AUDIENCE SECTION (6 SEGMENTS) -->
     <section id="audience" class="section bg-light-green">
         <div class="container">
             <div class="section-badge-center">
@@ -189,24 +193,123 @@
             <div class="grid grid-3 mt-4">
                 {% for aud in audiences %}
                 <div class="card audience-card">
-                    <div class="audience-header">
-                        <div class="audience-icon">
-                            {% if aud.icon_type == 'hotel' %}🏨
-                            {% elif aud.icon_type == 'food' %}🍽️
-                            {% elif aud.icon_type == 'catering' %}👨‍🍳
-                            {% elif aud.icon_type == 'wedding' %}🎉
-                            {% elif aud.icon_type == 'shop' %}🏪
-                            {% else %}🏢{% endif %}
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">
+                                {% if aud.icon_type == 'hotel' %}🏨
+                                {% elif aud.icon_type == 'food' %}🍽️
+                                {% elif aud.icon_type == 'catering' %}👨‍🍳
+                                {% elif aud.icon_type == 'wedding' %}🎉
+                                {% elif aud.icon_type == 'shop' %}🏪
+                                {% else %}🏢{% endif %}
+                            </div>
+                            <div>
+                                <h3 class="audience-title">{{ aud.title }}</h3>
+                                <div class="audience-sub">{{ aud.subtitle }}</div>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="audience-title">{{ aud.title }}</h3>
-                            <span class="audience-sub">{{ aud.subtitle }}</span>
-                        </div>
+                        <p class="audience-desc">{{ aud.description }}</p>
                     </div>
-                    <p class="audience-desc">{{ aud.description }}</p>
                     <div class="audience-footer">
                         <span class="sub-badge-left">• {{ aud.badge_left }}</span>
                         <span class="sub-badge-right">{{ aud.badge_right }}</span>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="card audience-card">
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">🏨</div>
+                            <div>
+                                <h3 class="audience-title">ஹோட்டல்கள் (Hotels)</h3>
+                                <div class="audience-sub">நட்சத்திர & தங்கும் விடுதிகள்</div>
+                            </div>
+                        </div>
+                        <p class="audience-desc">உயர் தரம் பிரிக்கப்பட்ட காய்கறிகள், பிரீமியம் அரிசி, மளிகைப் பொருட்கள் தினசரி காலை விநியோகம்.</p>
+                    </div>
+                    <div class="audience-footer">
+                        <span class="sub-badge-left">• தொடர்ச்சியான தினசரி சப்ளை</span>
+                        <span class="sub-badge-right">B2B ரேட்ஸ்</span>
+                    </div>
+                </div>
+                <div class="card audience-card">
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">🍽️</div>
+                            <div>
+                                <h3 class="audience-title">உணவகங்கள் (Restaurants)</h3>
+                                <div class="audience-sub">மெஸ், தாபா & ஃபாஸ்ட் புட்ஸ்</div>
+                            </div>
+                        </div>
+                        <p class="audience-desc">அன்றாட சமையலுக்குத் தேவையான பெரிய வெங்காயம், நாட்டு தக்காளி, உருளை, மசாலா பொருட்கள் மற்றும் எண்ணெய் வகைகள்.</p>
+                    </div>
+                    <div class="audience-footer">
+                        <span class="sub-badge-left">• கிரேட்கள் மற்றும் மூட்டை விலை</span>
+                        <span class="sub-badge-right">குறைந்த சேதாரம்</span>
+                    </div>
+                </div>
+                <div class="card audience-card">
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">👨‍🍳</div>
+                            <div>
+                                <h3 class="audience-title">கேட்டரிங் சர்வீசஸ் (Catering Services)</h3>
+                                <div class="audience-sub">நிகழ்வு சமையல் ஒப்பந்தக்காரர்கள்</div>
+                            </div>
+                        </div>
+                        <p class="audience-desc">ஒரே பட்டியலில் அத்தனை பொருட்களையும் குறித்த நேரத்தில் சமையல் கூடம் உள்ள இடத்திற்கே கொண்டு சேர்த்தல்.</p>
+                    </div>
+                    <div class="audience-footer">
+                        <span class="sub-badge-left">• முழுமையான பட்டியல் பேக்கிங்</span>
+                        <span class="sub-badge-right">24/7 சேவை</span>
+                    </div>
+                </div>
+                <div class="card audience-card">
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">🎉</div>
+                            <div>
+                                <h3 class="audience-title">திருமண நிகழ்ச்சிகள் & விழாக்கள்</h3>
+                                <div class="audience-sub">மண்டபங்கள் & சமூக விருந்துகள்</div>
+                            </div>
+                        </div>
+                        <p class="audience-desc">வாழைப்பழ தார், தேங்காய், பந்தி இலைகள், சீரக சம்பா நெய், எண்ணெய் மற்றும் காய்கறி மொத்த தொகுப்புகள்.</p>
+                    </div>
+                    <div class="audience-footer">
+                        <span class="sub-badge-left">• மண்டபத்திற்கே நேரடி வேன்</span>
+                        <span class="sub-badge-right">மொத்த சேமிப்பு</span>
+                    </div>
+                </div>
+                <div class="card audience-card">
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">🏪</div>
+                            <div>
+                                <h3 class="audience-title">காய்கறி & பழக்கடைகள் (Retail Shops)</h3>
+                                <div class="audience-sub">சில்லறை விற்பனையாளர்கள்</div>
+                            </div>
+                        </div>
+                        <p class="audience-desc">சில்லறை விற்பனையாளர்களுக்கு அன்றைய சந்தை விலைக்கேற்ப மொத்த கிரேட்கள், பெட்டிகள் மற்றும் சாக்கு மூட்டைகளில் நேரடி விநியோகம்.</p>
+                    </div>
+                    <div class="audience-footer">
+                        <span class="sub-badge-left">• மண்டியில் இருந்து நேரடி மூட்டை</span>
+                        <span class="sub-badge-right">மண்டி விலை</span>
+                    </div>
+                </div>
+                <div class="card audience-card">
+                    <div>
+                        <div class="audience-header">
+                            <div class="audience-icon">🏢</div>
+                            <div>
+                                <h3 class="audience-title">பிற வணிக நிறுவனங்கள் (B2B)</h3>
+                                <div class="audience-sub">ஹாஸ்டல்கள், கேன்டீன்கள் & நிறுவனங்கள்</div>
+                            </div>
+                        </div>
+                        <p class="audience-desc">கல்லூரி, தொழிற்சாலை விடுதிகள், தனியார் நிறுவன கேன்டீன்களுக்கான வழக்கமான வாராந்திர/மாதாந்திர கொள்முதல் தேவைகள்.</p>
+                    </div>
+                    <div class="audience-footer">
+                        <span class="sub-badge-left">• ஜிஎஸ்டி பில் & முறைப்படுத்தப்பட்ட சப்ளை</span>
+                        <span class="sub-badge-right">B2B பில்லிங்</span>
                     </div>
                 </div>
                 {% endfor %}
@@ -230,20 +333,49 @@
                         {% elif step.step_number == 3 %}✔️
                         {% else %}🚚{% endif %}
                     </div>
-                    <h3 class="step-title">{{ step.title }}</h3>
+                    <h3 class="step-title">படி {{ step.step_number }}: {{ step.title }}</h3>
                     <p class="step-desc">{{ step.description }}</p>
-                    <div class="step-pill">{{ step.tag_badge }}</div>
+                    <span class="step-pill">{{ step.tag_badge }}</span>
+                </div>
+                {% empty %}
+                <div class="step-card">
+                    <div class="step-badge-num">1</div>
+                    <div class="step-icon">📋</div>
+                    <h3 class="step-title">படி 1: பட்டியல் அனுப்பவும்</h3>
+                    <p class="step-desc">உங்களுக்குத் தேவையான பொருட்கள் மற்றும் அவற்றின் அளவை அனுப்பவும்.</p>
+                    <span class="step-pill">Form / WhatsApp / Excel</span>
+                </div>
+                <div class="step-card">
+                    <div class="step-badge-num">2</div>
+                    <div class="step-icon">💵</div>
+                    <h3 class="step-title">படி 2: விலை & இருப்பு உறுதி</h3>
+                    <p class="step-desc">பொருட்களின் இருப்பு மற்றும் மொத்த விலையை நாங்கள் உறுதி செய்வோம்.</p>
+                    <span class="step-pill">உடனடி Quoting & Stock Check</span>
+                </div>
+                <div class="step-card">
+                    <div class="step-badge-num">3</div>
+                    <div class="step-icon">✔️</div>
+                    <h3 class="step-title">படி 3: ஆர்டர் கன்பர்மேஷன்</h3>
+                    <p class="step-desc">ஆர்டரை உறுதிசெய்யவும்.</p>
+                    <span class="step-pill">பொருட்கள் தரம் பிரிப்பு & பேக்கிங்</span>
+                </div>
+                <div class="step-card">
+                    <div class="step-badge-num">4</div>
+                    <div class="step-icon">🚚</div>
+                    <h3 class="step-title">படி 4: நேரடி டெலிவரி</h3>
+                    <p class="step-desc">உறுதிசெய்யப்பட்ட ஆர்டரை நேரடியாக உங்கள் இடத்திற்கு வழங்குவோம்.</p>
+                    <span class="step-pill">குறித்த நேரத்தில் உங்கள் இடத்தில்</span>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </section>
 
-    <!-- 7. FEATURED PRODUCTS CAROUSEL (முக்கிய பொருட்கள்) -->
+    <!-- 7. KEY FEATURED PRODUCTS (முக்கிய பொருட்கள்) -->
     <section id="products" class="section bg-soft">
         <div class="container">
             <div class="section-badge-center">
-                <span class="pill-badge">✨ புதிய வருகை & மொத்த ஸ்டாக்</span>
+                <span class="pill-badge">புதிய வரவு & மொத்த ஸ்டாக்</span>
             </div>
             <div class="section-header-row">
                 <div>
@@ -258,49 +390,96 @@
 
             <div class="slider-container" id="prod-grid">
                 {% for prod in products %}
-                <div class="card prod-card">
+                <div class="card product-card">
                     <div class="prod-img-box">
-                        <img src="{{ prod.image_url }}" alt="{{ prod.name }}" onerror="this.onerror=null;this.src='https://placehold.co/400x300/0B3D2C/FFFFFF?text={{ prod.name }}';">
+                        <img src="{{ prod.image_url }}" alt="{{ prod.name }}" onerror="this.onerror=null;this.src='https://placehold.co/400x300/14532d/FFFFFF?text={{ prod.name }}';">
                         <span class="prod-badge">{{ prod.category_tag }}</span>
                     </div>
                     <div class="prod-info">
                         <h4 class="prod-name">{{ prod.name }}</h4>
-                        <p class="prod-sub">{{ prod.description }}</p>
-                        <a href="https://wa.me/{{ settings.whatsapp_number }}?text=வணக்கம் ஊர் உழவன், எனக்கு {{ prod.name }} மொத்த விலை விவரம் தேவை." target="_blank" class="btn-wa-quote">
+                        <div class="prod-sub">{{ prod.description }}</div>
+                        <a href="https://wa.me/{{ settings.whatsapp_number }}?text=வணக்கம் எனக்கு {{ prod.name }} மொத்த விலை தேவை." target="_blank" class="btn-wa-quote">
                             💬 விலை கேட்க
                         </a>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="card product-card">
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500" alt="வாழைப்பழம்">
+                        <span class="prod-badge">பழங்கள்</span>
+                    </div>
+                    <div class="prod-info">
+                        <h4 class="prod-name">வாழைப்பழம்</h4>
+                        <div class="prod-sub">பூவன், செவ்வாழை, ரோபஸ்டா மொத்த தார்</div>
+                        <a href="#" class="btn-wa-quote">💬 விலை கேட்க</a>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500" alt="தக்காளி">
+                        <span class="prod-badge">காய்கறிகள்</span>
+                    </div>
+                    <div class="prod-info">
+                        <h4 class="prod-name">தக்காளி</h4>
+                        <div class="prod-sub">நாட்டு தக்காளி & ஆப்பிள் தக்காளி கிரெட்டுகள்</div>
+                        <a href="#" class="btn-wa-quote">💬 விலை கேட்க</a>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=500" alt="வெங்காயம்">
+                        <span class="prod-badge">காய்கறிகள்</span>
+                    </div>
+                    <div class="prod-info">
+                        <h4 class="prod-name">வெங்காயம்</h4>
+                        <div class="prod-sub">சின்ன வெங்காயம், பல்லாரி மூட்டைகள்</div>
+                        <a href="#" class="btn-wa-quote">💬 விலை கேட்க</a>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500" alt="உருளைக்கிழங்கு">
+                        <span class="prod-badge">காய்கறிகள்</span>
+                    </div>
+                    <div class="prod-info">
+                        <h4 class="prod-name">உருளைக்கிழங்கு</h4>
+                        <div class="prod-sub">ஊட்டி மற்றும் மேட்டுப்பாளையம் தரம்</div>
+                        <a href="#" class="btn-wa-quote">💬 விலை கேட்க</a>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="prod-img-box">
+                        <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5c317?w=500" alt="கேரட்">
+                        <span class="prod-badge">காய்கறிகள்</span>
+                    </div>
+                    <div class="prod-info">
+                        <h4 class="prod-name">கேரட் (ஊட்டி)</h4>
+                        <div class="prod-sub">புதிய மலைத்தோட்ட கேரட் மூட்டைகள்</div>
+                        <a href="#" class="btn-wa-quote">💬 விலை கேட்க</a>
                     </div>
                 </div>
                 {% endfor %}
             </div>
 
-            <!-- Dynamic Indicator Dots -->
-            <div class="carousel-dots">
+            <!-- Dynamic Indicator Dots for Products -->
+            <div class="carousel-dots" id="prod-dots">
                 <span class="dot active"></span>
-                <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
         </div>
     </section>
 
-    <!-- 8. WHOLESALE ENQUIRY FORM -->
+    <!-- 8. WHOLESALE ENQUIRY & UPLOAD FORM -->
     <section id="enquiry-form" class="section">
         <div class="container">
-            {% if messages %}
-                {% for msg in messages %}
-                <div class="alert alert-{{ msg.tags }}">
-                    {{ msg }}
-                </div>
-                {% endfor %}
-            {% endif %}
-
             <div class="enquiry-box-grid">
-                <!-- Left Chef Catering Banner -->
+                <!-- Left Visual Banner -->
                 <div class="enquiry-left-banner">
                     <div class="banner-overlay">
                         <span class="banner-badge">ஊர் உழவன் B2B விநியோகம்</span>
-                        <h2 class="banner-heading">உங்கள் வணிகத்திற்குத் தேவையான அனைத்துப் பொருட்களும் ஒரே இடத்தில்!</h2>
+                        <h3 class="banner-heading">உங்கள் வணிகத்திற்குத் தேவையான அனைத்து பொருட்களும் ஒரே இடத்தில்!</h3>
                         <p class="banner-desc">தினசரி மண்டி விலையிலேயே சிறந்த தரமான காய்கறிகள், பழங்கள் மற்றும் மளிகைப் பொருட்கள் நேரடியாக உங்கள் வணிக இடத்திற்கு வந்து சேரும்.</p>
                         <ul class="banner-checklist">
                             <li>✔ ஹோட்டல் & கேட்டரிங் சிறப்புத் தேவைகள்</li>
@@ -310,34 +489,44 @@
                     </div>
                 </div>
 
-                <!-- Right Form -->
+                <!-- Right Interactive Form -->
                 <div class="enquiry-form-card">
                     <div class="form-card-header">
                         <h3 class="form-title">மொத்த விலை விசாரணை படிவம் (Wholesale Enquiry)</h3>
                         <span class="instant-reply-badge">⚡ உடனடி பதில்</span>
                     </div>
-                    <p class="form-subtitle">கீழே உள்ள படிவத்தை பூர்த்தி செய்து உடனடி விலைப் பட்டியல் மற்றும் விநியோக விவரங்களைப் பெறுங்கள்.</p>
+                    <p class="form-subtitle">கீழே உள்ள படிவத்தை பூர்த்தி செய்து உடனே விலைப் பட்டியல் மற்றும் விநியோக விவரங்களைப் பெறுங்கள்.</p>
 
-                    <form method="POST" enctype="multipart/form-data" id="rfq-form">
+                    <!-- Alert / Flash Messages -->
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-error">{{ message }}</div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <form method="POST" enctype="multipart/form-data" id="order-form">
                         {% csrf_token %}
+
+                        <!-- Row 1: Business Name & Contact Person -->
                         <div class="form-grid-2">
                             <div class="form-group">
-                                <label>வணிகம் / வாடிக்கையாளர் பெயர் <span class="req">*</span></label>
+                                <label>வணிகம் / வாடிக்கையாளர் பெயர் (Business/Customer Name) <span class="req">*</span></label>
                                 {{ form.business_name }}
-                                {{ form.business_name.errors }}
+                                {% if form.business_name.errors %}<small class="req">{{ form.business_name.errors.0 }}</small>{% endif %}
                             </div>
                             <div class="form-group">
-                                <label>தொடர்பு கொள்ள வேண்டிய நபர் <span class="req">*</span></label>
+                                <label>தொடர்பு கொள்ள வேண்டிய நபர் (Contact Person) <span class="req">*</span></label>
                                 {{ form.contact_person }}
-                                {{ form.contact_person.errors }}
+                                {% if form.contact_person.errors %}<small class="req">{{ form.contact_person.errors.0 }}</small>{% endif %}
                             </div>
                         </div>
 
+                        <!-- Row 2: Mobile Number & Business Type -->
                         <div class="form-grid-2">
                             <div class="form-group">
                                 <label>கைபேசி எண் / WhatsApp (Mobile Number) <span class="req">*</span></label>
                                 {{ form.phone_number }}
-                                {{ form.phone_number.errors }}
+                                {% if form.phone_number.errors %}<small class="req">{{ form.phone_number.errors.0 }}</small>{% endif %}
                             </div>
                             <div class="form-group">
                                 <label>வணிக வகை (Business Type) <span class="req">*</span></label>
@@ -345,59 +534,61 @@
                             </div>
                         </div>
 
+                        <!-- Row 3: Delivery Location & Delivery Date -->
                         <div class="form-grid-2">
                             <div class="form-group">
                                 <label>விநியோக இடம் / முகவரி (Delivery Location) <span class="req">*</span></label>
                                 {{ form.delivery_location }}
-                                {{ form.delivery_location.errors }}
+                                {% if form.delivery_location.errors %}<small class="req">{{ form.delivery_location.errors.0 }}</small>{% endif %}
                             </div>
                             <div class="form-group">
                                 <label>தேவையான விநியோக தேதி (Delivery Date) <span class="req">*</span></label>
                                 {{ form.delivery_date }}
-                                {{ form.delivery_date.errors }}
+                                {% if form.delivery_date.errors %}<small class="req">{{ form.delivery_date.errors.0 }}</small>{% endif %}
                             </div>
                         </div>
 
+                        <!-- Row 4: Required Products & Approx Quantity -->
                         <div class="form-grid-2">
                             <div class="form-group">
                                 <label>தேவையான பொருட்கள் (Required Products) <span class="req">*</span></label>
                                 {{ form.required_products }}
-                                {{ form.required_products.errors }}
+                                {% if form.required_products.errors %}<small class="req">{{ form.required_products.errors.0 }}</small>{% endif %}
                             </div>
                             <div class="form-group">
                                 <label>தோராயமான அளவு / எடையளவு (Approx Quantity) <span class="req">*</span></label>
                                 {{ form.approx_quantity }}
+                                {% if form.approx_quantity.errors %}<small class="req">{{ form.approx_quantity.errors.0 }}</small>{% endif %}
                             </div>
                         </div>
 
+                        <!-- Row 5: Additional Notes -->
                         <div class="form-group">
                             <label>கூடுதல் தகவல் / குறிப்புகள் (Additional Message)</label>
                             {{ form.additional_notes }}
                         </div>
 
+                        <!-- Option: Upload File OR Send Via WhatsApp Direct -->
                         <div class="enquiry-two-options">
-                            <!-- File Upload with id="file-upload" -->
                             <div class="upload-dropzone">
                                 <div class="upload-icon">📤</div>
-                                <div class="upload-text"><strong>தேவைப் பட்டியல் கோப்பை பதிவேற்றலாம்</strong></div>
+                                <strong>தேவைப் பட்டியல் கோப்பை பதிவேற்றலாம்</strong>
                                 <span class="upload-hint">(Excel, PDF, Handwritten Sheet அல்லது Image)</span>
                                 {{ form.requirement_file }}
-                                {{ form.requirement_file.errors }}
                             </div>
-
-                            <!-- Direct WhatsApp button -->
                             <div class="direct-wa-box">
                                 <div class="wa-box-header">
-                                    <span class="wa-icon">💬</span>
+                                    <span>💬</span>
                                     <strong>வாட்ஸ்அப் நேரடி ஆர்டர்</strong>
                                 </div>
-                                <p class="wa-box-sub">உங்கள் மளிகை/காய்கறி பட்டியலை போட்டோ அல்லது மெசேஜாக நேரடியாக அனுப்பலாம்.</p>
+                                <p class="wa-box-sub">உங்கள் மளிகை/காய்கறி பட்டியலை போட்டோ அல்லது பிடிஎப்பாக நேரடியாக அனுப்பலாம்.</p>
                                 <button type="button" class="btn btn-wa-full" onclick="sendViaWhatsAppDirect()">
-                                    📲 வாட்ஸ்அப்பில் பட்டியலை அனுப்ப
+                                    💬 வாட்ஸ்அப்பில் பட்டியலை அனுப்ப
                                 </button>
                             </div>
                         </div>
 
+                        <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary btn-submit-full">
                             🚀 மொத்த விலை கோரிக்கை சமர்ப்பிக்க (Submit Wholesale Enquiry)
                         </button>
@@ -411,7 +602,7 @@
     <section id="why-us" class="section">
         <div class="container">
             <div class="section-badge-center">
-                <span class="pill-badge">⭐ எங்கள் சிறப்பம்சங்கள்</span>
+                <span class="pill-badge">✨ எங்கள் சிறப்பம்சங்கள்</span>
             </div>
             <h2 class="section-title text-center">ஏன் ஊர் உழவன்?</h2>
             <p class="section-subtitle text-center">தமிழ்நாட்டில் ஹோட்டல்கள், உணவகங்கள், கேட்டரிங் மற்றும் திருமண வணிக வாடிக்கையாளர்களுக்கு நம்பகமான நேரடி சப்ளை பார்ட்னர்.</p>
@@ -428,6 +619,32 @@
                     </div>
                     <h3 class="why-title">{{ item.title }}</h3>
                     <p class="why-desc">{{ item.description }}</p>
+                </div>
+                {% empty %}
+                <div class="why-card">
+                    <div class="why-icon-bubble">🧺</div>
+                    <h3 class="why-title">ஒரே இடத்தில் அனைத்தும்</h3>
+                    <p class="why-desc">காய்கறிகள், பழங்கள் மற்றும் முழுமையான மளிகைப் பொருட்கள் அனைத்தும் ஒரே சப்ளையரிடம்.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon-bubble">🏷️</div>
+                    <h3 class="why-title">B2B மொத்த விலை</h3>
+                    <p class="why-desc">வணிக வாடிக்கையாளர்களுக்கான அதிக சேமிப்பு தரும் நேரடி மார்க்கெட் மொத்த விற்பனை விலை.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon-bubble">🍳</div>
+                    <h3 class="why-title">ஹோட்டல் & கேட்டரிங் சிறப்புத் தேவைகள்</h3>
+                    <p class="why-desc">அளவு, தரம் மற்றும் குறிப்பிட்ட சமையல் முறைகளுக்கு உகந்த பிரத்யேக தயாரிப்பு மற்றும் கிரேடுகள்.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon-bubble">🚚</div>
+                    <h3 class="why-title">ஆர்டர் நேரடி விநியோகம்</h3>
+                    <p class="why-desc">உங்கள் தேவைக்கேற்ப தொகுக்கப்பட்டு குறித்த நேரத்தில் விழா அல்லது வணிக இடத்திற்கே விநியோகம்.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon-bubble">🎧</div>
+                    <h3 class="why-title">நம்பகமான ஆதரவு</h3>
+                    <p class="why-desc">அவசரத் தேவைகள் மற்றும் தினசரி ஆர்டர்களுக்கு உடனடி WhatsApp மற்றும் தொலைபேசி வாடிக்கையாளர் உதவி.</p>
                 </div>
                 {% endfor %}
             </div>
